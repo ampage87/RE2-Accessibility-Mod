@@ -159,3 +159,7 @@ Please open an issue to discuss before starting work on a contribution.
 - The Resident Evil modding and research community, for years of work documenting the game's files and engine.
 
 Resident Evil 2 is a trademark of Capcom. This project isn't affiliated with or endorsed by Capcom and includes none of the game's files.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details. The bundled Prism library in `Mod/third_party/prism` keeps its own license, the Mozilla Public License 2.0.
