@@ -1,0 +1,34 @@
+#! start=100
+# Real C++ mod. RPD main hall: scripted doors named from the room file, ink ribbon pick-up,
+# typewriter save question, and the save screen's slot cursor.
+teleport 200 from 103
+wait 6
+expect RPD Main Hall, 1st floor
+cat
+next
+expect Door to Police Station Front
+next
+expect Door to
+cat
+expect Items
+next
+expect Ink ribbon
+go
+action
+yes
+expect-item Ink ribbon
+cat
+expect Objects
+find Typewriter
+expect Typewriter
+go
+action
+expect Will you save
+expect Yes or no
+yes
+ui save
+ui slot 1
+expect Slot 2
+ui slot 2
+expect Slot 3
+ui close

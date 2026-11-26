@@ -1,0 +1,19 @@
+# r408: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.15 s)
+# start ms<TAB>wav<TAB>text
+450	c00.wav	Soldiers in gas masks creep down a corridor.
+7150	c01.wav	In a lab, a scientist gazes at vials of purple liquid.
+18550	c02.wav	He lifts one and smiles. The soldiers close in behind him.
+35350	c03.wav	He reaches. They shoot him.
+40450	c04.wav	He slumps down, bleeding.
+45450	c05.wav	They take the case of samples and leave.
+48550	c06.wav	A woman runs in.
+59750	c07.wav	Alone, William takes out a vial he kept back.
+71250	c08.wav	He injects himself. His eyes turn red.
+75550	c09.wav	Elsewhere, Annette.
+89150	c10.wav	In the sewers, the soldiers stop.
+103850	c11.wav	Something moves above them.
+109450	c12.wav	A soldier lies dead. The sample case spills open, and a boot crushes a vial. A huge, warped body steps forward.
+124550	c13.wav	The creature cuts a soldier down.
+132450	c14.wav	The last soldier freezes.
+135750	c15.wav	A huge, slitted eye opens.
+138450	c16.wav	Among the broken vials, rats gather.

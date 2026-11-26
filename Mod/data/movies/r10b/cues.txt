@@ -1,0 +1,3 @@
+# r10b: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.00 s)
+# start ms<TAB>wav<TAB>text
+200	c00.wav	The statue's chest slides open.

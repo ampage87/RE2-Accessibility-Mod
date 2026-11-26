@@ -1,0 +1,23 @@
+# opn1stl: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.03 s)
+# start ms<TAB>wav<TAB>text
+1030	c00.wav	Night. A jeep speeds down a highway.
+6730	c01.wav	A sign points to Raccoon City.
+9230	c02.wav	The city streets are empty.
+11430	c03.wav	A diner glows on a deserted corner.
+17630	c04.wav	The jeep pulls up. Its headlights catch a body lying in the road.
+29830	c05.wav	The driver, a young police officer, Leon Kennedy, walks toward the body.
+35430	c06.wav	Elsewhere, a gas station at night.
+41030	c07.wav	A bloody, pale-eyed man lurches into view.
+45330	c08.wav	Nearby, a trucker bleeds.
+51730	c09.wav	He clutches the wound, then drives his tanker truck away.
+59630	c10.wav	A bloody hand drags along a wall.
+69330	c11.wav	Figures shuffle toward him.
+74330	c12.wav	Zombies, closing in.
+84530	c13.wav	He aims his gun.
+91230	c14.wav	The body grabs his leg. He shoots it point-blank. Zombies close in.
+102230	c15.wav	He fires again and again, backing into an alley.
+109130	c16.wav	A woman runs out, a zombie behind her.
+114630	c17.wav	He fires. The zombie drops dead.
+122230	c18.wav	The woman, Claire, takes his hand. Zombies pour out of the alley. They run.
+129930	c19.wav	A police car. They jump in.
+136130	c20.wav	The car speeds away from the zombies.

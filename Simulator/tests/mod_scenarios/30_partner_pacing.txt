@@ -1,0 +1,16 @@
+#! start=100 claire
+# With a partner following (Sherry, flag 1.3), auto-walk walks instead of running when she falls
+# behind, waits when she is far behind, and waits for her by a door before arriving.
+flag 1 3 1
+flag 4 51 1
+teleport 40A from 408
+wait 3
+find Door to Garbage Dump
+go
+expect Waiting for Sherry.
+expect Arrived.
+# the partner is in the catalog, to walk back to
+find Sherry
+expect Sherry,
+go
+expect Sherry

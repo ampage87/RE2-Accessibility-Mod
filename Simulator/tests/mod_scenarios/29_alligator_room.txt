@@ -1,0 +1,13 @@
+#! start=100 claire
+# The alligator's corridor (40A): once the alligator has appeared the mod says how the fight
+# works, names the cylinder release and the safety lock plainly, and says where the alligator is.
+teleport 40A from 408
+wait 3
+find Door to Garbage Dump
+go
+wait 30
+skip
+expect Gas cylinder release, Safety lock device, unlocks the doors
+expect The alligator. The doors are locked.
+wait 5
+expect Alligator

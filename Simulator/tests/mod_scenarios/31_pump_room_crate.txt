@@ -1,0 +1,18 @@
+#! start=100
+# 603 (Pump Room): the way to Power Room U is up from the lower floor, over the crate that is
+# pushed off the west walkway. The mod lists the crate and drops it; auto-walk then climbs the
+# crate (a climbable object), the step with only the player's bit (0x8000) and the box to the door.
+teleport 603 from 602
+wait 2
+killall
+find Crate on the upper
+expect Crate on the upper walkway
+go
+expect Pushed the crate
+# the lower floor (the lift is not simulated); the room's init puts the fallen crate back in place
+teleport 603 -4022 0 -26054
+wait 2
+killall
+find Door to Power Room U
+go
+expect Arrived.

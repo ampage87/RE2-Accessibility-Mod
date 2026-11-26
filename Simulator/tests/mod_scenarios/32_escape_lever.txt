@@ -1,0 +1,24 @@
+#! start=100
+# Leon B's ending: the train's activation lever (703) says "The tunnel gate isn't open yet!"
+# until the device in the Entrance (700) opens the gate. Both are named for what they are, and
+# the lever's entry says what is missing.
+flag 4 136 1
+teleport 703 from 704
+wait 2
+killall
+find Activation lever
+expect the tunnel gate isn't open yet
+teleport 700 from 703
+wait 2
+killall
+find Device to open the tunnel gate
+expect Device to open the tunnel gate
+flag 4 140 1
+teleport 703 from 700
+wait 2
+killall
+find Activation lever
+go
+expect Facing Activation lever for the train motor
+action
+expect Will you move the lever?

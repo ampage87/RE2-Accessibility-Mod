@@ -1,0 +1,14 @@
+#! start=100 claire
+# Things that appear while the player is in a room are added to the end of the catalog and
+# announced: the S.T.A.R.S. office printer hands over the police report once it has printed.
+teleport 115 from 114
+wait 3
+expect S.T.A.R.S. Room
+flag 3 100 1
+wait 2
+expect New: Federal police report
+find Federal
+go
+expect Arrived
+action
+expect Will you take it

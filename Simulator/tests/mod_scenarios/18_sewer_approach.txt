@@ -1,0 +1,25 @@
+#! start=100 claire
+# Fixes from the Claire A playthrough, police station basement to the sewers.
+# Room 30A: the door to the sewers is below the walkway. The way is east along the walkway and
+# down the drop at its end; the grid used to snap the drop's west side (the lower corridor)
+# onto the walkway and walk into the railing.
+teleport 30A from 309
+wait 3
+find Door to Branch Passage
+go
+expect-not Auto-walk blocked
+expect Dropping down
+expect Arrived
+# The ladder back up is one thing, not a door and a ladder.
+find Ladder down to Underground Chamber
+go
+expect Climbing
+expect Arrived
+expect-not Door to Underground Chamber in front of you
+# Room 21B: the elevator behind the painting is a door into the same room. Without the script's
+# name for it (after loading a save) it was "Door to Chief's Office" inside the Chief's Office.
+teleport 21B from 308
+wait 3
+find Elevator
+expect Elevator
+expect-not Door to Chief's Office,

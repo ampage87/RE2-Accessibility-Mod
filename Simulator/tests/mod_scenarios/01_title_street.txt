@@ -1,0 +1,61 @@
+#! start=100
+# Real C++ mod. Title menu cursor, then Leon's opening street: room announcement, catalog,
+# directions, enemy targeting, aiming feedback, kills and auto-walk to the exit.
+ui title
+expect Title screen
+ui cursor 1
+expect Original mode
+ui game
+wait 1
+expect Back Street Area West
+expect 1 exit
+expect 6 enemies nearby
+enemies
+expect 6 enemies
+cat
+expect Exits, 1
+next
+expect Door to Kendo's Gun Shop, 1 of 1
+where
+expect Door to Kendo's Gun Shop:
+give handgun bullets 60
+target
+expect Facing Zombie
+aim
+expect Aiming at Zombie
+fire 6
+expect Zombie down
+go
+target
+aim
+fire 6
+go
+target
+aim
+fire 6
+go
+target
+aim
+fire 6
+go
+target
+aim
+fire 6
+go
+target
+aim
+fire 6
+go
+target
+aim
+fire 6
+go
+target
+aim
+fire 6
+go
+go
+action
+expect-room 101
+wait 1
+expect Kendo's Gun Shop

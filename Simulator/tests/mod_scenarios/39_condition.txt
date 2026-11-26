@@ -1,0 +1,48 @@
+#! claire start=104
+# Condition (bio2.exe 0x502530, the status screen's ECG): Fine above half of maximum life,
+# Caution (yellow) above 40, Caution (orange) above 20, Danger (red), Poison (purple) while
+# poisoned. H says the condition and colour only; a change of condition is said at once with
+# the word only; the status screen opens with the character's name, condition and colour.
+wait 1
+hp 150
+health
+expect Fine, Green.
+hp 90
+wait 1
+expect Condition: Caution!
+health
+expect Caution, Yellow.
+expect-not 90
+hp 30
+wait 1
+expect-not Condition
+health
+expect Caution, Orange.
+hp 15
+wait 1
+expect Condition: Danger!
+health
+expect Danger, Red.
+poison 1
+wait 1
+expect Condition: Poison! A Blue Herb cures it.
+health
+expect Poison, Purple.
+poison 0
+heal
+wait 1
+expect Condition: Fine!
+menu status
+expect Claire, Fine, Green, 
+expect Slot 1
+menu close
+wait 1
+# other characters by the player's model: Sherry (15), Ada (14), Hunk (12)
+ui poke 0x989EF8 15
+menu status
+expect Sherry, Fine, Green, 
+menu close
+wait 1
+ui poke 0x989EF8 12
+menu status
+expect Hunk, Fine, Green, 

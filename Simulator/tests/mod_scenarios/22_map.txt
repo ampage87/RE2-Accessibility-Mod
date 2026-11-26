@@ -1,0 +1,55 @@
+#! start=100 claire
+# The map: M from here, Shift M (mapmode) to browse every room by area, the way to a room
+# (locked doors counted), and travel: the door to take is selected in each room on the way.
+teleport 204 from 205
+wait 3
+mapkey
+expect Police station, 1st floor
+expect needs the Spade key
+mapmode
+expect Map.
+cat
+cat
+cat
+cat
+expect Police station basement
+next
+next
+next
+where
+expect No open way
+give Heart key
+wait 1
+where
+expect you have the Heart key
+mapmode
+expect Map closed
+teleport 10F from 10A
+wait 3
+mapmode
+next
+next
+next
+next
+next
+next
+next
+next
+next
+expect RPD Art Storeroom
+health-assist
+go
+expect Heading to RPD Art Storeroom
+wait 12
+expect-room 10A
+go
+expect Walking to Door to RPD Art Storeroom
+# Room 116: two flights down from the 2nd-floor door to the East Office door. The long flight's
+# floor mask runs from floor 1 to 4 (its type's multiplier says 4), so it rises 3 floors.
+teleport 116 from 109
+wait 3
+find Door to RPD East Office
+go
+expect Bottom of the stairs
+expect-not on another level
+expect Arrived

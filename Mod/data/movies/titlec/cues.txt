@@ -1,0 +1,6 @@
+# titlec: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.07 s)
+# start ms<TAB>wav<TAB>text
+2870	c00.wav	Capcom.
+6670	c01.wav	The Umbrella logo, on a canister. It rolls across a dark alley.
+12670	c02.wav	Quick flashes: red eyes, Claire, an explosion, a police car, soldiers firing.
+20370	c03.wav	A huge eye opens. Resident Evil 2.

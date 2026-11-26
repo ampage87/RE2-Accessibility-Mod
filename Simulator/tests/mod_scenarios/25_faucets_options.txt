@@ -1,0 +1,83 @@
+#! start=100 claire
+# Room 20D's faucet puzzle: the faucets are named with their playing card, and the picture's
+# riddle gets a note (Queen 12, King 13, Jack 11; light the fireplace first). Doors that are
+# flights of stairs (door animation 4 up / 5 down) are named as stairs. The PC options menu
+# (Ctrl) and the map key's map (A) are read.
+flag 1 0 0
+teleport 20D from 20C
+wait 3
+find Faucet 12
+expect Faucet 12, the Queen
+find Faucet 11
+expect Faucet 11, the Jack
+find Fireplace
+expect Fireplace
+find Picture
+go
+wait 3
+action
+wait 1
+page
+page
+page
+expect Mod note: in playing cards the Queen is 12
+expect turn on faucet 12, then 13, then 11
+teleport 207 from 209
+wait 3
+find Stairs up to
+expect Stairs up to RPD West Stairway Corridor, 2nd floor
+teleport 10C from 114
+wait 3
+find Stairs down to
+expect Stairs down to RPD West Stairway Corridor, 1st floor
+menu options
+expect Options. Up and down to choose
+expect Key config
+press down
+expect Screen brightness
+press down
+expect Sound, stereo
+press up
+press up
+press action
+expect Key config. Up and down to choose
+expect Up: Numpad 8.
+press down 4
+expect Aim: X.
+press action
+expect Press the new key for Aim.
+press vk:5A
+expect Aim: Z.
+press up
+expect Right: Numpad 6.
+press up 4
+expect Exit. Left or right for Default keys.
+press right
+expect Default keys
+press left
+press action
+expect Keep the new keys? Yes.
+press right
+expect No.
+press left
+press action
+expect Key config
+press down 2
+press action
+expect Sound. Up and down to choose
+expect Speakers: stereo
+press down 2
+expect Music volume: 100
+press left
+expect Music volume: 99
+press cancel
+press up
+expect Screen brightness
+press action
+expect Screen brightness picture
+press cancel
+press cancel
+expect Back to the game
+menu map
+expect Game map screen, with the mod's map
+menu close

@@ -1,0 +1,27 @@
+#! start=200
+# The PC save screen (typewriter): list of saves with Create New and Exit, the overwrite box.
+ui game
+wait 1
+menu save 3
+expect savedata
+expect Create New
+menushot save_list
+press down
+expect Time 00:10:00
+press down
+expect 00:11:00
+press action
+expect Proceed to overwrite this save file? Overwrite, Cancel. Overwrite.
+menushot overwrite_box
+press right
+expect Cancel
+press action
+press down
+press down
+expect Exit
+press action
+expect Leave without saving?
+press left
+expect Yes
+press action
+expect Back to the game

@@ -1,0 +1,59 @@
+#! claire start=104
+# Real C++ mod. Claire's start: health and inventory keys, then the status screen driven with
+# the game's own buttons (layout from bio2.exe): item slots in two columns, the box above them,
+# the top menu (File, Map, Item, Exit), the command menu and combining.
+health
+expect Fine, Green.
+expect-not 200
+inv
+expect Lockpick
+room
+expect Back Street Area East
+menu status
+expect Claire, Fine, Green, 
+expect Slot 1
+menushot status_open
+press right
+expect Slot 2
+press down
+expect Slot 4
+press up
+press up
+expect Top box
+press up
+expect Menu: Item
+press left
+expect Map
+press left
+expect File
+press right
+press right
+press right
+expect Exit
+press left
+expect Item
+press action
+expect Top box
+press down
+expect Browning handgun, 13, equipped. Slot 2
+press action
+expect Browning handgun:
+expect Equip
+menushot command_menu
+press down
+expect Check
+press down
+expect Combine
+press up
+press up
+expect Equip
+press down
+press down
+press action
+expect Combine with: Browning handgun
+press left
+expect Knife. Slot 1
+menushot combine
+press cancel
+menu close
+expect Back to the game

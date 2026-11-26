@@ -1,0 +1,26 @@
+#! start=100 claire
+# Auto-walk with the game's real collision rules (player bit 0x8000): narrow gaps between the
+# S.T.A.R.S. office desks, and stairs whose top landing only blocks enemies (room 10C).
+teleport 115 -19700 -10400
+wait 3
+find Door to S.T.A.R.S.
+go
+expect-not Can't reach
+expect Arrived
+teleport 115 -18300 -13100
+wait 3
+find Door to S.T.A.R.S.
+go
+expect-not Can't reach
+expect Arrived
+teleport 10C from 114
+wait 3
+find Stairs down
+go
+expect-not Can't reach
+expect Bottom of the stairs
+expect Arrived
+find Door to S.T.A.R.S.
+go
+expect Top of the stairs
+expect Arrived

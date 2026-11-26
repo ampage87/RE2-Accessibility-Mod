@@ -1,0 +1,26 @@
+# Game files are copyrighted by Capcom and are never committed.
+Game Files/
+Simulator/gamedata*.zip
+Simulator/snaps/
+Audio Description/
+
+# In-game document text (Capcom's), kept out of the public repo for now
+Mod/data/files.txt
+
+# Machine-specific install info (written by the setup script)
+Game Install Info.txt
+
+# Build output, logs and scratch files
+Mod/build/*
+!Mod/build/prebuilt/
+Logs/
+Tools/_re2_update.zip
+_repo_sync.tgz
+*.obj
+*.exe
+*.new
+Mod/tests/nouns
+__pycache__/
+*.pyc
+*.bmp
+*.log

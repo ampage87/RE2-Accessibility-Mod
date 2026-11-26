@@ -1,0 +1,15 @@
+# opn2ndl: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.16 s)
+# start ms<TAB>wav<TAB>text
+560	c00.wav	A zombie staggers toward a police car.
+21860	c01.wav	The car speeds through the dark streets.
+24760	c02.wav	Behind them, a tanker truck follows.
+28760	c03.wav	It tears through a hanging banner.
+41060	c04.wav	A zombie lunges at them.
+46560	c05.wav	It grabs Leon. The car swerves out of control.
+51160	c06.wav	It slams into a pole. The zombie flies through the windshield.
+62010	c07.wav	A tanker truck comes.
+70560	c08.wav	They leap from the car.
+72560	c09.wav	The truck plows into the car and rolls over.
+76160	c10.wav	It explodes. Claire dives clear of the fireball.
+80160	c11.wav	She lands hard. Flames fill the street between them.
+91260	c12.wav	Claire raises a hand and calls back. Leon stands alone before the burning wreck.

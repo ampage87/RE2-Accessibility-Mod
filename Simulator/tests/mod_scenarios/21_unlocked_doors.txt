@@ -1,0 +1,11 @@
+#! start=100 claire
+# A door's lock id byte carries bit 0x80 (204's door to the archive room: 0x85); the key flag
+# is FG_KEY[id & 0x7F]. Once unlocked the door no longer says it needs the key.
+teleport 204 from 205
+wait 3
+find Door to RPD Archive
+expect needs the Spade key
+flag 31 5 1
+wait 1
+find Door to RPD Archive
+expect-not needs the Spade key

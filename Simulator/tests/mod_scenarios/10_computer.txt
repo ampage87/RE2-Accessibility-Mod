@@ -1,0 +1,43 @@
+#! start=200
+# A computer terminal: the screen's lines are read as the game finishes typing them, and the
+# letters the player types are echoed. The on-screen keyboard's keys are named as the cursor moves. Mod letter keys (E, T...) are ignored while typing.
+ui game
+wait 1
+menu computer
+expect Computer
+wait 6
+expect DOOR LOCK SERVICE
+expect Hall side doors: LOCKED
+expect The doors can be unlocked
+expect by a CARD KEY.
+expect Enter your user name.
+expect Keyboard. Arrows choose a letter
+expect On A.
+press right 2
+expect C
+press left 3
+expect At sign
+press left
+expect Backspace
+press down
+expect Enter, nothing typed
+press right 2
+expect J
+press up
+expect A
+press action
+expect A
+press left 2
+expect Backspace
+press action
+expect Deleted A, empty
+press right
+type GUEST
+expect G
+expect U
+expect T
+expect Enter, typed G U E S T
+menushot terminal
+expect-not enemies
+menu close
+expect Back to the game

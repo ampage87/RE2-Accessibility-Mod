@@ -1,0 +1,8 @@
+# r108l: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.03 s)
+# start ms<TAB>wav<TAB>text
+130	c00.wav	Leon, on a balcony. A helicopter's spotlight finds an officer on a rooftop.
+15480	c01.wav	Zombies close in.
+18930	c02.wav	He shoots at them.
+25730	c03.wav	They drag him down. His stray shots hit the pilot.
+31030	c04.wav	The helicopter spins out of control and plunges toward the building.
+36230	c05.wav	It crashes and explodes.

@@ -1,0 +1,7 @@
+#! start=100
+# Room 600: standing on a raised spot; the mod offers the drop and announces the level change.
+# (Climb-up/drop-down geometry is approximate - see README "Fidelity".)
+teleport 600 -5800 -1800 -17000 0
+expect You can drop down here
+action
+expect Down a level

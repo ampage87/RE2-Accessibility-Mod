@@ -1,0 +1,7 @@
+# r505: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.01 s)
+# start ms<TAB>wav<TAB>text
+310	c00.wav	A train engine waits on a platform at night.
+4010	c01.wav	A barrier closes.
+6010	c02.wav	Clamps lock with bursts of steam.
+11010	c03.wav	The train rests on a huge lift.
+14010	c04.wav	The lift sinks down a deep shaft.

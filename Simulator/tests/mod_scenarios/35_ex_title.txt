@@ -1,0 +1,31 @@
+#! start=100
+# The 4th Survivor / To-fu title (title routine 4): after the mode's ending the game shows the
+# mode's picture, waits for any key, then offers Game start (plays the mode again) and Exit.
+# Also the clock those modes run on variable 35, which counts up and is never announced.
+ui title
+ui rtn 4 0
+expect 4th Survivor title. Press any key
+ui rtn 4 1
+expect 4th Survivor. Game start, plays 4th Survivor again. Up and down to choose
+ui cursor 1
+expect Exit to the main menu
+ui cursor 0
+expect Game start, plays 4th Survivor again
+ui tofu 1
+ui rtn 4 0
+expect To-fu title
+ui game
+wait 1
+var 35 0
+flag 1 4 1
+wait 1
+var 35 1
+wait 1
+var 35 2
+wait 1
+var 35 3
+wait 1
+expect-not Countdown: 1 second
+expect-not Countdown: 3 seconds
+timer
+expect Time so far: 3 seconds

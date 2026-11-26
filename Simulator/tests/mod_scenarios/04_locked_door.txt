@@ -1,0 +1,17 @@
+#! start=100 auto-dismiss
+# Real C++ mod. Locked door: announced as locked, the locked message is read, then the key.
+teleport 105 from 104
+wait 1
+cat
+next
+next
+expect Door to Police Station Rear Cabin, locked
+go
+action
+expect It's locked
+give cabin key
+action
+expect You used the Cabin key
+expect-room 106
+wait 1
+expect Police Station Rear Cabin

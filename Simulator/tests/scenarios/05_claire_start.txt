@@ -1,0 +1,8 @@
+#! claire start=104
+# Claire A start: inventory and status keys.
+inv
+expect Lockpick
+status
+expect Fine
+room
+expect Back Street Area East

@@ -1,0 +1,7 @@
+# r204l: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift -0.07 s)
+# start ms<TAB>wav<TAB>text
+230	c00.wav	Leon walks down a hallway.
+2830	c01.wav	Above him, a skinless creature with an exposed brain clings to the ceiling.
+7130	c02.wav	Its long tongue uncoils.
+9930	c03.wav	Leon stops, frozen.
+12930	c04.wav	It drops down at him.

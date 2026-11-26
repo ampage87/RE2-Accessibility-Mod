@@ -1,0 +1,74 @@
+#! start=100
+# Extreme Battle: its title (routine 6), menu, level menu, records (routine 7), character
+# select (task 0x4EA320), stage clear times and the result after a run. Memory values follow
+# bio2.exe (see re2_addr.h, Extreme Battle).
+ui title
+ui sys 1000000
+# two levels open; Level 1 record: Claire, 10 + 11 + 12 minutes
+ui poke 0x989E91 1
+ui poke 0x989E94 1 2
+ui poke 0x989E96 1 2
+ui poke 0x989E98 600 4
+ui poke 0x989E9C 660 4
+ui poke 0x989EA0 720 4
+ui rtn 6 0
+expect Extreme Battle title. Press any key
+ui step 1
+ui rtn 6 1
+expect Extreme Battle. Load game
+ui cursor 1
+expect Game start
+expect-not Level 1
+ui cursor 2
+expect Result, your records
+ui cursor 3
+expect Exit to the main menu
+# Game start with levels open: the level menu
+# entering the level menu resets the cursor to the level row (bio2.exe 0x50733F)
+ui cursor 0
+ui step 2
+ui sub4 2
+expect Choose level. Level 1, left or right to change, 2 levels open
+ui poke 0x691EF3 1
+expect Level 2
+ui cursor 1
+expect Exit
+# Result on the menu: the records screen
+ui rtn 7 1
+ui poke 0x698822 2
+ui poke 0x698823 1
+expect Result, your records. Level 1: Claire, 33 minutes 0 seconds. Level 2: no record.
+# character select at the start of a run
+ui poke 0x698822 0
+ui poke 0x6949E7 4
+ui poke 0x6949E4 1
+ui poke 0x694260 2
+expect Choose character. Leon, left or right to change, 3 characters open.
+ui poke 0x6949E4 2
+expect Claire
+ui poke 0x694260 5
+# a stage cleared during the run
+ui game
+ui sys 1000000
+wait 1
+ui poke 0x989EC4 500 4
+expect Stage clear. Clear time: 8 minutes 20 seconds
+# the result after the run: Level 1 as Leon, 500 + 520 + 540 = 26 minutes, a new record
+ui title
+ui sys 1000000
+ui poke 0x989E91 1
+ui poke 0x989E92 1
+ui poke 0x989E93 0
+ui poke 0x989E94 1 2
+ui poke 0x989E96 1 2
+ui poke 0x989E98 600 4
+ui poke 0x989E9C 660 4
+ui poke 0x989EA0 720 4
+ui poke 0x989EC4 500 4
+ui poke 0x989EC8 520 4
+ui poke 0x989ECC 540 4
+ui rtn 7 1
+ui poke 0x698823 2
+ui poke 0x698822 2
+expect Result. Level 1, Leon. Your time: 26 minutes 0 seconds.
+expect Best: Claire, 33 minutes 0 seconds. New record!

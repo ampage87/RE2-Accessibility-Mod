@@ -1,0 +1,17 @@
+# r704c: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift -0.02 s)
+# start ms<TAB>wav<TAB>text
+22080	c00.wav	Sherry runs to the next car. The door behind her bulges, struck from the other side.
+29580	c01.wav	Leon faces a mass of spiked, mutated flesh.
+38280	c02.wav	On the roof, Claire faces spreading, mutated flesh.
+45080	c03.wav	Sherry crawls off.
+56580	c04.wav	Leon backs away from the creature. The train hurtles through the tunnel.
+79680	c05.wav	Sherry hits the brake. Sparks fly. The train screeches to a stop.
+107280	c06.wav	They run down the tunnel toward daylight.
+110580	c07.wav	Tendrils cover the train.
+112980	c08.wav	A timer counts down.
+114880	c09.wav	An eye opens.
+116480	c10.wav	The train explodes. Fire blasts out of the tunnel.
+120980	c11.wav	Smoke rises at dawn.
+123380	c12.wav	They made it out.
+152080	c13.wav	Claire looks to the horizon. The credits roll.
+296280	c14.wav	Resident Evil 2.

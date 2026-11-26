@@ -1,0 +1,8 @@
+# r108c: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift -0.01 s)
+# start ms<TAB>wav<TAB>text
+90	c00.wav	Claire, on a balcony. A helicopter's spotlight finds an officer on a rooftop.
+15350	c01.wav	Zombies close in.
+18890	c02.wav	He shoots at them.
+25690	c03.wav	They drag him down. His stray shots hit the pilot.
+30990	c04.wav	The helicopter spins out of control and plunges toward the building.
+36190	c05.wav	It crashes and explodes.

@@ -1,0 +1,21 @@
+#! start=100
+# Assist options: unlimited health and unlimited ammo (F5 / F6 in the game).
+ui game
+wait 1
+health-assist
+expect Unlimited health on
+ammo-assist
+expect Unlimited ammo on
+target
+aim
+fire 6
+expect-not left.
+expect-not Out of ammo
+wait 20
+health
+expect-not Danger
+expect-not Caution
+ammo-assist
+expect Unlimited ammo off
+health-assist
+expect Unlimited health off

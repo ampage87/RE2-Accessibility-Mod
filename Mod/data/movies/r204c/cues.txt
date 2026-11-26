@@ -1,0 +1,7 @@
+# r204c: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift -0.14 s)
+# start ms<TAB>wav<TAB>text
+160	c00.wav	Claire walks down a hallway.
+2760	c01.wav	Above her, a skinless creature with an exposed brain clings to the ceiling.
+7060	c02.wav	Its long tongue uncoils.
+9860	c03.wav	Claire stops, frozen.
+12860	c04.wav	It drops down at her.

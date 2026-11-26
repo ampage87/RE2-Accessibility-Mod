@@ -1,0 +1,5 @@
+# Narrated introduction, first scenario (scene table 0x533600). scene<TAB>wav<TAB>text
+# Piper hfc_female, length_scale 0.7 (faster than the movies' 0.85), shortened 2026-11-25
+2	i00.wav	Microscope view: dark, clumped cells.
+3	i01.wav	The STARS badge. Then two STARS officers in a dark forest, one aiming a pistol.
+5	i02.wav	The Umbrella logo. Then a lab lined with tall specimen tanks.

@@ -1,0 +1,17 @@
+#! start=100
+# The escape countdown: status flag 1.4 runs it, script variable 35 holds the seconds left.
+# The mod says it when it starts, at each whole minute and at 30 and 10 seconds; Y says the time.
+teleport 704 from 703
+wait 2
+var 35 300
+flag 1 4 1
+wait 2
+expect Countdown: 5 minutes left
+timer
+expect 4 minutes 5
+wait 62
+expect 4 minutes left.
+flag 1 4 0
+wait 1
+timer
+expect Countdown stopped for now

@@ -1,0 +1,25 @@
+#! start=100 claire
+# Room 203: the crank is on top of a shelf, out of reach; walking to it ends at the shelf below
+# ("A pile of investigation reports."). The mod asks to push the stepladder there, climbs it,
+# lets the game ask about the crank and climbs down again.
+teleport 203 from 204
+wait 3
+find Crank
+expect Crank, on top of the shelf
+go
+wait 2
+action
+expect A pile of investigation reports
+wait 1
+page
+expect Push the stepladder here
+yes
+wait 15
+expect On the stepladder
+expect You found Crank
+expect-not Examine pile of investigation in front of you
+yes
+expect Picked up Crank
+wait 8
+expect Back on the floor
+expect-item Crank

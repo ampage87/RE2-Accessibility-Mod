@@ -1,0 +1,31 @@
+#! start=100
+# Leon A opening street (room 100): enemy awareness, combat feedback, path-finding to the only exit.
+expect-room 100
+room
+expect 1 exit
+enemies
+expect 6 enemies
+give handgun bullets 60
+next
+expect Exit to Kendo's Gun Shop
+go
+expect Stopped. Zombie close
+aim
+expect Aiming at Zombie
+fire 6
+expect Zombie down
+go
+aim
+fire 6
+go
+aim
+fire 6
+go
+aim
+fire 6
+go
+aim
+fire 6
+go
+action
+expect-room 101

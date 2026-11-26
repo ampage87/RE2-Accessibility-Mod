@@ -1,0 +1,14 @@
+#! start=100 auto-dismiss
+# Locked door (105 -> 106 needs the Cabin key): locked message without the key, unlocks with it.
+teleport 105 from 104
+filter
+next
+next
+expect Exit to Police Station Rear Cabin, locked
+go
+action
+expect It's locked
+give cabin key
+action
+expect You used the Cabin key
+expect-room 106

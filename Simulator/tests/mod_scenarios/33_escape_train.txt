@@ -1,0 +1,15 @@
+#! start=100
+# Leon B's escape train (704): with the train moving (4.137) the last fight's scene starts when
+# the player walks west past x -6000; the mod lists that spot until the scene has played.
+flag 4 136 1
+flag 4 140 1
+flag 4 137 1
+teleport 704 from 703
+wait 3
+killall
+find Scene trigger
+expect Scene trigger, walk into it
+go
+wait 60
+find Scene trigger
+expect-not Scene trigger

@@ -1,0 +1,12 @@
+#! start=100 claire
+# Travelling from the map through a ladder: the ladder asks "Will you go down the ladder?";
+# the journey answers Yes itself, and the arrival is announced.
+teleport 30A from 309
+wait 3
+mapmode
+prev
+expect Underground Chamber.
+go
+expect Heading to Underground Chamber
+wait 30
+expect-room 309

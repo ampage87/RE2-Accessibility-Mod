@@ -1,0 +1,40 @@
+#! start=100 claire
+# The statue puzzle in room 10C: reading the inscription on the statue holding the red jewel
+# adds the mod's question to the game's message; Yes places both statues (the game's own
+# triggers then release the jewel) and walks the player to the jewel, where the game asks
+# whether to take it.
+teleport 10C from 114
+wait 3
+find Statue holding
+expect Statue holding the red jewel
+go
+expect Arrived
+action
+expect Something is written on the mounting.
+expect-not god of sun
+page
+expect The god of sun and the god of moon. Their gaze
+page
+expect upon me is the only thing that can release red soul.
+page
+expect Will you push the statues into place? Yes or no.
+expect Yes
+wait 1
+ui yesno 1
+expect No
+no
+expect-not Pushing
+wait 2
+action
+expect Something is written on the mounting.
+yes
+expect Pushing the statues into place
+wait 15
+expect The statues are in place
+expect-not Walking to
+expect Will you take it
+yes
+wait 2
+expect-item Red jewel
+wait 3
+expect-not New: Red jewel

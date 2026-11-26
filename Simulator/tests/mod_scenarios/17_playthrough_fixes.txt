@@ -1,0 +1,135 @@
+#! start=100 claire
+# Fixes from the Claire A playthrough (police station).
+# Room 200: from the 2nd-floor door landing to the soda machine corridor door on the ground floor
+# (the door's AOT says floor 1; the way is over the stairs to floor 0).
+teleport 200 from 110
+wait 3
+find Door to RPD Soda Machine
+go
+expect-not Can't reach
+expect Arrived
+# Room 10A while the helicopter burns: the fire is a damage area. The summary says so, and a walk
+# whose only way crosses it asks for a second request.
+teleport 10A from 10F
+wait 3
+expect danger areas
+find Door to RPD Art Storeroom
+go
+expect goes through a danger area
+go
+expect through the danger area
+# Room 10B: the two woman reliefs get told apart by what examining them says.
+teleport 10B from 10A
+wait 3
+find Woman relief:
+expect Woman relief: there's a hole
+# Room 213: the reserve power panel. The mod explains the meter and reads it after each switch.
+teleport 213 from 211
+wait 3
+find Reserve power
+go
+action
+wait 3
+page
+page
+page
+page
+expect must end at exactly 80
+page
+wait 2
+yes
+wait 6
+expect Meter 36
+yes
+wait 6
+expect Meter 72
+no
+wait 6
+expect Meter 58
+yes
+wait 6
+expect Meter 94
+no
+wait 6
+expect Meter 80
+expect Power supply OK
+page
+wait 8
+# Room 110: the emergency ladder event sits over the door it opens; it is named for what it is.
+teleport 110 from 10F
+wait 3
+find Emergency ladder
+expect Emergency ladder to RPD Main Hall
+go
+wait 3
+action
+expect An emergency ladder
+page
+expect Will you push the button
+# Room 112: the library. The way behind the shelves is the weak floor on the upper walkway
+# (an event that runs when walked onto, listed as "Weak floor"); the shelves are walls in
+# routes and move. Then the plate's picture, the power switch (it slides the last shelf and
+# opens the way out) and each shelf's place; shelves at places 2, 5 and 7 bring out the
+# Serpent stone.
+page
+wait 2
+teleport 112 from 117
+wait 3
+expect 3 exits
+find Bronze plate
+go
+expect-not Arrived
+find Switch 1
+go
+wait 2
+action
+wait 1
+page
+expect no power yet
+no
+wait 3
+find Weak floor
+expect Weak floor, walk onto it
+go
+wait 15
+expect-not Lost the path
+find Bronze plate
+go
+wait 2
+action
+wait 2
+expect places 2, 5 and 7
+page
+wait 1
+page
+wait 1
+action
+wait 1
+find Power switch
+go
+wait 2
+action
+wait 1
+page
+yes
+wait 6
+find Switch 1
+go
+wait 2
+action
+wait 1
+page
+expect stands at place 1 of 9
+expect-not no power yet
+no
+wait 10
+find Switch 2
+go
+wait 2
+action
+wait 1
+page
+expect stands at place 4 of 9
+no
+wait 15
+expect New: Serpent stone

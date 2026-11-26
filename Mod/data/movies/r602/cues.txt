@@ -1,0 +1,3 @@
+# r602: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.01 s)
+# start ms<TAB>wav<TAB>text
+210	c00.wav	The platform sinks down a deep shaft.

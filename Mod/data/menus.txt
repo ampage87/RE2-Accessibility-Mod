@@ -1,0 +1,5 @@
+# Spoken labels for menu cursors, by screen state. key=Label for position 1|Label 2|...
+# Keys are written by the mod's [UI] log lines: title.<main routine>.<sub routine>, status.submenu,
+# status.cursor (menu positions after the item slots). A missing key or label is spoken as
+# "Option N" / "Choice N" / "Menu N". Correct these from a test session's log (see docs/TESTING.md).
+status.submenu=Use or equip|Check|Combine

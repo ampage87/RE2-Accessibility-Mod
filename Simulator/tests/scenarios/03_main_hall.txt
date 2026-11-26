@@ -1,0 +1,25 @@
+#! start=100
+# RPD main hall (200): scripted doors are named from the room file, typewriter save with an ink ribbon.
+teleport 200 from 103
+expect RPD Main Hall, 1st floor
+next
+expect Exit to Police Station Front
+next
+expect Door to RPD Soda Machine Corridor, 1st floor
+filter
+filter
+next
+expect Ink ribbon
+go
+action
+yes
+expect-item Ink ribbon
+filter
+filter
+next
+expect Typewriter
+go
+action
+expect Will you save
+yes
+expect Game saved

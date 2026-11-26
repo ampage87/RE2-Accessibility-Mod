@@ -1,0 +1,25 @@
+# opn1stc: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift -0.07 s)
+# start ms<TAB>wav<TAB>text
+930	c00.wav	Night. A motorcycle races down a dark highway.
+5730	c01.wav	It passes a billboard: Welcome to Raccoon City.
+9130	c02.wav	The city streets are empty.
+12930	c03.wav	A diner glows on a deserted corner.
+19730	c04.wav	The motorcycle rolls to a stop.
+23830	c05.wav	The rider, Claire Redfield, looks up at the city.
+30130	c06.wav	She climbs off the bike.
+35330	c07.wav	Elsewhere, a gas station at night.
+40930	c08.wav	A bloody, pale-eyed man lurches into view.
+45230	c09.wav	Nearby, a trucker bleeds.
+51630	c10.wav	He clutches the wound, then drives his tanker truck away.
+59330	c11.wav	Claire opens the diner door.
+66030	c12.wav	She walks through the empty diner.
+71330	c13.wav	No answer. She looks around.
+77630	c14.wav	Behind the counter, a man is eating a body. He turns. A zombie.
+92530	c15.wav	It keeps coming.
+95730	c16.wav	Outside, more zombies claw at the window.
+99130	c17.wav	The zombie lunges. Claire runs for the back exit.
+105530	c18.wav	She bursts into an alley. An officer aims a gun at her.
+111630	c19.wav	He fires. The zombie drops.
+119130	c20.wav	The officer, Leon, helps her up. Zombies pour out of the alley. They run.
+126930	c21.wav	They jump into a police car.
+133130	c22.wav	The car speeds away from the zombies.

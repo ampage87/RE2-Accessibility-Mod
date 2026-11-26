@@ -1,0 +1,22 @@
+#! claire start=104
+# The item box, driven like the game (layout from bio2.exe): your slots, then the box list
+# where the middle of the five shown is the place you swap with; empty places are read as Empty.
+menu itembox
+expect Item box. Your items: Knife. Slot 1
+menushot box_open
+press action
+expect In the box: Empty. Box 1
+press down
+expect Empty. Box 2
+press up
+press up
+expect Empty. Box 64
+press down
+press action
+expect Your items: Empty. Slot 1
+press action
+expect In the box: Knife. Box 1
+menushot box_after_swap
+press action
+expect Your items: Knife. Slot 1
+menu close

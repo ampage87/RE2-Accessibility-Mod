@@ -1,0 +1,13 @@
+# r703l: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.09 s)
+# start ms<TAB>wav<TAB>text
+390	c00.wav	A train waits in an underground station.
+11390	c01.wav	Leon, wounded, waits at the train. Claire runs for it.
+15890	c02.wav	The train pulls out. Claire is aboard.
+20090	c03.wav	Behind them, an explosion tears through the station.
+24090	c04.wav	Claire steps inside.
+29690	c05.wav	Sherry lies unconscious. A fireball roars down the tunnel after them. Leon shields her.
+44790	c06.wav	The train races through the tunnel.
+56790	c07.wav	Sherry stirs.
+69290	c08.wav	Leon walks to the front of the train.
+82090	c09.wav	The train races on. In the driver's cab, Leon stands alone.
+95290	c10.wav	Leon spins around. A red light flashes.

@@ -1,0 +1,42 @@
+#! start=100
+# Title menus: main menu labels, character choice, difficulty, special menu.
+ui title
+expect Title screen
+expect Main menu. Load game
+ui cursor 1
+expect Original mode
+ui cursor 4
+expect Option
+# the character screen fades in during step 1 and takes input in step 2 (bio2.exe 0x504240)
+ui screen 5
+expect Choose character. Leon, left or right to change
+ui step 2
+ui claire 1
+expect Claire, left or right to change
+ui cursor 1
+expect Exit
+ui cursor 0
+expect Claire, left or right to change
+# choosing a character goes straight to the difficulty screen, still in step 2
+ui screen 1
+expect Original mode. Choose difficulty. Normal
+ui option 1
+expect Easy
+ui cursor 1
+expect Exit
+ui hardok 1
+ui cursor 2
+expect Hard, right for Exit
+# Arrange mode: character screen 6, difficulty screen 2
+ui screen 6
+expect Choose character. Claire
+ui screen 2
+expect Arrange mode. Choose difficulty. Easy
+ui screen 4
+ui selmode 1
+expect Starting the game
+ui screen 3
+ui highlight 11
+expect Special. Extreme battle
+ui highlight 12
+expect Exit

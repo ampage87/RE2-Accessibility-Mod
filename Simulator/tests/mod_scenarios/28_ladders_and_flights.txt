@@ -1,0 +1,20 @@
+#! start=100 claire
+# 401 from the high walkway: the ladder down is under the warehouse door's spot (the game asks
+# about the warehouse door first until it is opened); the walk answers it, walks up to the
+# ladder again and goes down. 701: the way to the Tyrant Room is up two flights, along the
+# walkway and down two flights.
+flag 1 0 1
+teleport 401 from 404
+wait 4
+find Branch Passage, lower
+go
+expect taking the ladder down first
+wait 30
+expect Will you use the lockpick?
+expect Will you go down the ladder?
+expect Down a level
+teleport 701 from 700
+wait 5
+find Tyrant Room
+go
+expect Facing Door to Tyrant Room

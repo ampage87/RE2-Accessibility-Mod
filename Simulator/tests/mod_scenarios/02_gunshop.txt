@@ -1,0 +1,46 @@
+#! start=100
+# Real C++ mod. Gun shop: the Kendo cutscene, item catalog, walking to an item, the pick-up
+# question read aloud with its yes/no cursor, examine text, and the way out.
+teleport 100 -20490 -18994
+wait 1
+action
+expect-room 101
+wait 1
+expect Kendo's Gun Shop
+# walking in sets off Kendo's cutscene; let it play
+up 2
+wait 90
+cat
+cat
+expect Items
+next
+expect Handgun bullets
+go
+expect Arrived
+action
+expect Will you take it
+expect Yes or no
+ui yesno 1
+expect No
+ui yesno 0
+expect Yes
+yes
+expect-item Handgun bullets
+cat
+expect Objects
+find Examine
+go
+action
+expect-message
+ok
+cat
+cat
+cat
+expect Exits
+find Basketball
+expect Door to Basketball Court Alleyway
+go
+expect Arrived
+action
+expect-room 102
+wait 1

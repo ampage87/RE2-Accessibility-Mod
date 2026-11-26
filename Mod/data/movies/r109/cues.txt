@@ -1,0 +1,8 @@
+# r109: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.03 s)
+# start ms<TAB>wav<TAB>text
+330	c00.wav	Outside the police station, a helicopter flies over.
+3930	c01.wav	It lowers a large capsule on cables.
+7230	c02.wav	The capsule's clamps release with a hiss of steam.
+10930	c03.wav	The capsule drops away.
+13130	c04.wav	Inside, a dim hallway.
+15630	c05.wav	Dust clears. A huge, bald man in a long coat rises.

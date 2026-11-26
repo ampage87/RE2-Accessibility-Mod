@@ -1,0 +1,25 @@
+#! start=100 claire
+# Room 306, Sherry's water tank (played here as Claire: same room data). Ledges are in the
+# catalog; the lever's Yes, while the tank is drained, also lines up the three boxes so the
+# water floats them into a bridge to the Club key.
+teleport 306 from 305
+wait 3
+find Ledge to drop down
+expect Ledge to drop down
+find Lever
+go
+wait 2
+action
+wait 1
+page
+expect Yes also lines up the three boxes
+yes
+expect boxes are lined up
+wait 25
+find Club key
+go
+wait 15
+action
+wait 2
+yes
+expect Picked up Club key

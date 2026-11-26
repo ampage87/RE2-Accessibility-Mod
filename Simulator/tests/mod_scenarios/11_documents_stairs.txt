@@ -1,0 +1,21 @@
+#! claire start=104
+# Reading a document as it is picked up (Police memorandum, Waiting Room), and stairs in the catalog
+# (main hall): the steps by the counter, walking over them.
+teleport 201 from 200
+wait 2
+find memorandum
+go
+menu readfile 2
+expect POLICE MEMORANDUM
+expect Page 1
+press right
+expect Page 2
+press right
+press action
+teleport 200 from 201
+wait 1
+expect stairs
+find Stairs
+expect Stairs
+go
+expect stairs

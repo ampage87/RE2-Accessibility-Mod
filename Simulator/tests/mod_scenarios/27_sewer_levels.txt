@@ -1,0 +1,30 @@
+#! start=100 claire
+# Rooms 400 and 401 (the second Sherry scene): two doors to the same room on different levels
+# are told apart; a door on a level with no way up from here is not walked to the wrong way;
+# 401's ladder ("Will you go up the ladder?") is taken on the way to the high walkway; the
+# crawl pipe only Sherry fits through says so.
+flag 3 34 1
+teleport 400 from 401
+wait 4
+find upper level
+expect Door to South Control Room, upper level
+go
+expect Can't reach it from here yet; it is on another level.
+expect-not Dropping down
+find lower level
+expect Door to South Control Room, lower level
+go
+wait 3
+action
+wait 6
+expect South Control Room
+find Ladder up
+expect Ladder up
+find Crawlpipe
+expect too small for you to enter
+find Branch Passage, upper
+go
+expect taking the ladder up first
+wait 10
+expect Up a level
+expect Walking to Door to Branch Passage, upper level

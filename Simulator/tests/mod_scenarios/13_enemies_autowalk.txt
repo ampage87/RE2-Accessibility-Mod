@@ -1,0 +1,19 @@
+#! start=100
+# Sleeping enemies (asleep until a script wakes them) are left out of the catalog and the
+# enemy count; auto-walk runs and steers around awake zombies instead of stopping.
+teleport 204 from 201
+wait 2
+enemies
+expect No enemies detected
+cat
+cat
+cat
+cat
+expect Enemies, 0
+teleport 103 from 11B
+wait 1
+cat
+find Main Hall
+go
+expect-not Stopped
+expect Arrived

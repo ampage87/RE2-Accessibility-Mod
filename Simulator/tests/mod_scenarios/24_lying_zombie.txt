@@ -1,0 +1,11 @@
+#! start=100 claire
+# Room 20B (Claire A): a zombie lies on the floor by the door from 116 (pose 2, AI flag 0x40).
+# It stays down until the player comes close; auto-walk keeps a little away and does not stop.
+flag 1 6 0
+teleport 20B from 116
+wait 3
+expect Zombie lying on the floor
+find Door to RPD Soda
+go
+expect-not Zombie right next to you
+expect-not No way around

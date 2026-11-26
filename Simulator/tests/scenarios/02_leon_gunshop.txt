@@ -1,0 +1,33 @@
+#! start=100
+# Room 101 (gun shop): Kendo cutscene plays from the real script, then items, examine text, exit.
+teleport 100 -20490 -18994
+action
+expect-room 101
+expect Kendo's Gun Shop
+filter
+filter
+expect Showing items
+next
+expect Handgun bullets
+go
+wait 60
+next
+go
+action
+expect Will you take it
+yes
+expect-item Handgun bullets
+filter
+filter
+next
+go
+action
+expect-message
+ok
+filter
+next
+expect Exit to Basketball Court Alleyway
+go
+expect Arrived
+action
+expect-room 102

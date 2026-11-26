@@ -1,0 +1,8 @@
+#! start=100
+# Real C++ mod. A drop-down ledge is offered and the level change announced (facing the
+# shape-10 ledge on the level the player stands on: the game tests the floor mask).
+teleport 600 -5800 -1800 -17000 0
+wait 1
+expect You can drop down here
+action
+expect Down a level

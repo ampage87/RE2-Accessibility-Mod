@@ -1,0 +1,1 @@
+Prism 0.18.4, 32-bit, built 2026-11-25 by build_prism.ps1

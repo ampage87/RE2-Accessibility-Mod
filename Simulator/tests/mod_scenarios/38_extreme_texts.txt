@@ -1,0 +1,45 @@
+#! start=100
+# Extreme Battle's typed texts, read from the game's own tables (bio2.exe 0x525438 briefing,
+# 0x52CD80 mission complete, 0x533186 / 0x5331A5 stage clear objectives).
+ui game
+ui sys 1000000
+wait 1
+# the briefing at the start of a run: page 1 (lines 0-9), then page 2 (lines 10-19)
+ui poke 0x99D028 0
+ui poke 0x99DA84 0 4
+ui poke 0x99DA84 1 4
+expect A hazardous virus has been detected inside the transport train. Return to the police precinct, find the
+expect 4 special bombs
+expect traces of the virus!!
+ui poke 0x99DA84 5 4
+ui poke 0x99D028 10
+ui poke 0x99DA84 0 4
+ui poke 0x99DA84 1 4
+expect Although unknown threats and terrors will be encountered throughout your mission
+expect GOOD LUCK!
+# a stage cleared: time, then the next objective
+ui poke 0x98149F 1
+ui poke 0x989EC4 363 4
+expect Stage clear. Clear time: 6 minutes 3 seconds. Obtain the 4 special bombs! Press any button.
+ui poke 0x98149F 0
+ui poke 0x989EC8 400 4
+expect Fight to the police precinct!
+# mission complete at the end of the run: page 1 (lines 0-10), page 2 (11-21)
+ui poke 0x99C871 0
+ui poke 0x995B40 1 4
+expect Mission complete!! Thanks to your efforts, the hazardous virus has been eradicated from our world.
+expect Bio Hazard.
+ui poke 0x995B40 5 4
+ui poke 0x99C871 11
+ui poke 0x995B40 1 4
+expect Stories will be told for generations to come
+expect CONGRATULATIONS HERO!!
+# a room announcement during a page waits for it instead of cutting it off
+ui poke 0x995B40 5 4
+ui poke 0x99D028 0
+ui poke 0x99DA84 0 4
+ui poke 0x99DA84 1 4
+expect A hazardous virus
+room
+expect-not [interrupt]
+expect Back Street

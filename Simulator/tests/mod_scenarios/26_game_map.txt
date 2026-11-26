@@ -1,0 +1,21 @@
+#! start=100 claire
+# The map key (A) opens the game's map screen, a picture; the mod's map opens with it. Its
+# keys work there; backslash closes the game's map (the mod presses cancel) and travels.
+teleport 204 from 205
+wait 3
+menu map
+expect Game map screen, with the mod's map. Escape closes both.
+expect Map. Police station, 1st floor
+next
+expect of
+where
+go
+expect Heading to
+wait 20
+expect-not Not available on this screen
+menu map
+expect Game map screen
+menu close
+expect Back to the game
+mapkey
+expect Police station, 1st floor

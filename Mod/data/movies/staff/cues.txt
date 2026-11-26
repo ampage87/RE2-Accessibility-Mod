@@ -1,0 +1,4 @@
+# staff: audio description, Piper hfc_female, aligned to the Classic REbirth movie (shift +0.01 s)
+# start ms<TAB>wav<TAB>text
+310	c00.wav	The credits roll.
+143510	c01.wav	Resident Evil 2.
